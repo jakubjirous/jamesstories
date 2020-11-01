@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "intros",
+  "info": {
+    "name": "Intro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "richtext",
+      "required": true
+    },
+    "video": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

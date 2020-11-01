@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "latest_works",
+  "info": {
+    "name": "Latest Work"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "youtube": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "description2": {
+      "type": "richtext"
+    },
+    "description3": {
+      "type": "richtext"
+    }
+  }
+}

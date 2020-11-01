@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "Portfolio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "categories": {
+      "collection": "category"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "youtube": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

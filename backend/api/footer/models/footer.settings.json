@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "name": "Footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "youtubeURL": {
+      "type": "string"
+    },
+    "instagramURL": {
+      "type": "string"
+    },
+    "facebookURL": {
+      "type": "string"
+    },
+    "siteURL": {
+      "type": "string"
+    }
+  }
+}

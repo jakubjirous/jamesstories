@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/latest-works",
+      "handler": "latest-work.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/latest-works/count",
+      "handler": "latest-work.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/latest-works/:id",
+      "handler": "latest-work.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/latest-works",
+      "handler": "latest-work.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/latest-works/:id",
+      "handler": "latest-work.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/latest-works/:id",
+      "handler": "latest-work.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
